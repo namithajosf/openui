@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background-color:  #573687;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  margin-left: 100px;
+  font-weight: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.email-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.pass-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.top-field {
+  padding: 10px;
+  width: 200px;
+  border-radius: 0px;
+  border: none;
+}
+
+.forgot-password {
+  color: white; 
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline; 
+}
+
+.input-field {
+  padding: 10px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #745D93;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.login-button:hover {
+  background-color: #CCC;
+}
+
+.img {
+  margin-right: 50px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #070709;
+  height: calc(100vh - 100px);
+}
+
+.icon-section {
+  margin-right: 50px;
+}
+
+.signup-form {
+  margin-bottom: 50px;
+  padding: 30px;
+  color: white;
+  max-width: 400px;
+  margin-left: 200px;
+}
+
+.signup-form h2 {
+  margin-bottom: 50px;
+}
+
+.name-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.email-group, .dob-group {
+  margin-bottom: 20px;
+}
+
+.email-group input {
+  width: 380px;
+}
+
+.password-group input {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.password-group input:last-child {
+  margin-top: 2px;
+}
+
+.dob-group label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.dob-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.day, .month, .year {
+  width: 60px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.gender-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #745D93;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #605c69;
+}
