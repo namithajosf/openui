@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>OpenUI</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='styles.css') }}"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>OpenUI</h1>
+		</header>
+
+		<!-- Upload Section -->
+		<div class="container">
+			<h2>Upload Image</h2>
+			<div class="upload-section">
+				<form
+					id="uploadForm"
+					enctype="multipart/form-data"
+				>
+					<input
+						type="file"
+						id="imageInput"
+						accept="image/*"
+						style="display: none"
+						name="file"
+					/>
+
+					<div
+						class="callout"
+						data-closable
+					>
+						<button
+							id="removeImageBtn"
+							aria-label="Close alert"
+							type="button"
+							data-close
+							style="display: none"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div
+						class="preview"
+						id="imagePreview"
+					></div>
+
+					<button
+						type="button"
+						id="selectImageBtn"
+						onclick="document.getElementById('imageInput').click();"
+					>
+						Select Image
+					</button>
+					<button
+						type="submit"
+						id="uploadImageBtn"
+						disabled
+					>
+						Generate Code
+					</button>
+
+					<!-- Progress bar -->
+					<div
+						class="progress"
+						id="imageProgress"
+						style="display: none"
+					>
+						<div class="progress-bar"></div>
+					</div>
+
+					<!-- Result display -->
+					<div
+						class="result"
+						id="imageResult"
+					></div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Detected Components -->
+		<div class="container">
+			<h2>Detected Components</h2>
+			<pre
+				id="componentsDisplay"
+				class="code-display"
+			></pre>
+		</div>
+
+		<!-- Generated Kotlin Code -->
+		<div class="container">
+			<h2>Generated Kotlin Code</h2>
+			<button
+				id="copyCodeBtn"
+				style="display: none"
+			>
+				Copy Code
+			</button>
+			<pre
+				id="generatedCodeDisplay"
+				class="code-display"
+			></pre>
+		</div>
+
+		<footer>
+			<p>&copy; 2024 OpenUI Project</p>
+		</footer>
+
+		<!-- Script inclusion -->
+		<script src="{{ url_for('static', filename='script.js') }}"></script>
+	</body>
+</html>
