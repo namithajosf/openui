@@ -9,7 +9,7 @@ OpenUI is an innovative project that automates the conversion of visual UI desig
 -   **Automated UI Component Detection:** Detects and classifies UI elements from visual designs using deep learning models.
 -   **Kotlin Code Generation:** Converts detected UI components into functional Kotlin code for Android app development.
 -   **Increased Efficiency:** Reduces manual coding effort and minimizes design-to-code discrepancies.
--   **Machine Learning Integration:** Uses CNNs and LSTMs for component detection and layout analysis.
+-   **Machine Learning Integration:** Uses CNNs for component detection and layout analysis.
 
 ## Installation
 
